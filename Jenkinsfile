@@ -15,7 +15,7 @@ node {
         }
 
         stage('Deploy') {
-            sh './jenkins/scripts/deploy-heroku.sh'
+            sh './jenkins/scripts/deliver.sh'
 
             input message: 'Sudah selesai menggunakan React App? (Klik "Proceed" untuk mengakhiri)'
 
